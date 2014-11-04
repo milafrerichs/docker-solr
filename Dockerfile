@@ -1,2 +1,3 @@
 FROM makuk66/docker-solr
-COPY schema.xml /opt/solr/conf
+RUN rm -R /opt/solr/example/solr
+COPY solr /opt/solr/example/solr
